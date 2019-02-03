@@ -1,5 +1,5 @@
 <template>
-	<div class='root'>
+	<div id='about' class='root'>
 			<div class='home-text'>
 				<h1>Hi there!</h1> 
 				I'm a fourth year undergraduate student at UC Irvine, graduating in Spring 2019 with a B.S. in Computer Science. I would love to impact the lives of everyday individuals through my work, while working in an evironment that emphasizes team success that also fosters my individual growth. If you'd like to chat more, don't hesitate to reach out. 

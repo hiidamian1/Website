@@ -1,5 +1,5 @@
 <template>
-  <div class='root'>
+  <div id='projects' class='root'>
   	<div class='projects-content'>
   		<h1>Projects</h1> 
   		<div class='projects-list'>
@@ -71,5 +71,9 @@
 
 	ul .nested {
 		margin-left: 15px;
+	}
+
+	a {
+		color:#333;
 	}
 </style>
