@@ -60,7 +60,6 @@
 	}
 
 	h1 {
-		margin-bottom: 20px;
 		font-weight: normal;
 		font-size: 50px;
 	}

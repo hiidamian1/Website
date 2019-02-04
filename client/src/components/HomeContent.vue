@@ -31,6 +31,7 @@
 		flex: 2;
 		margin: 20px;
 		font-size: 24px;
+		line-height: 40px;
 	}
 
 	.home-image{

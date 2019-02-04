@@ -17,7 +17,7 @@
 	.header {
 		background: #333;
 		color: #fff;
-		text-align: right;
+		text-align: center;
 		padding: 10px;
 		position: -webkit-sticky;
 		position: sticky;

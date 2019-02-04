@@ -18,7 +18,7 @@
 		color: #fff;
 		padding: 10px;
 		width: 100%;
-		text-align: right;
+		text-align: center;
 	}
 
 	h1 {
