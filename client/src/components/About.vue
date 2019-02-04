@@ -4,7 +4,7 @@
 		<div class='about-text'>
 			<h1>Hi there!</h1> 
 			<div>
-				I'm a fourth year undergraduate at UC Irvine graduating in Spring 2019. I would love the opportunity to impact the lives of everyday individuals through my work, in an environment that allows me contribute to the overall success of the team learning new things along the way. 
+				I'm a fourth year undergraduate at UC Irvine graduating in Spring 2019. I would love the opportunity to impact the lives of everyday individuals through my work, in an environment that allows me to contribute to the overall success of the team while also learning new things along the way. 
 				
 				<br><br>
 				
