@@ -24,7 +24,6 @@
 		font-weight: normal;
 		margin: auto;
 		line-height: 30px;
-
 	}
 	.root {
 		width: 100%;

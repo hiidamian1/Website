@@ -1,7 +1,7 @@
 <template>
-  <div id="home">
+  <div>
     <HomeIntro/>
-    <HomeContent/>
+    <About/>
     <Projects/>
     <Contact/>
   </div>
@@ -11,7 +11,7 @@
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
 import HomeIntro from '../components/HomeIntro.vue';
-import HomeContent from '../components/HomeContent.vue';
+import About from '../components/About.vue';
 import Projects from '../components/Projects.vue';
 import Contact from '../components/Contact.vue';
 
@@ -19,7 +19,7 @@ export default {
   name: 'home',
   components: {
     HomeIntro,
-    HomeContent,
+    About,
     Projects,
     Contact
   }

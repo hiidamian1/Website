@@ -28,7 +28,8 @@
 	  			<li>Portfolio Website
 	  				<ul class='nested'>
 						<li>Showcasing my interests and who I am</li>
-						<li>Vue.js, deployed on Netlify, Node.js(planned), Express.js(planned)</li>
+						<li>Vue.js, deployed on Netlify</li>
+						<li>Would like to integrate features involving my favorite apps, like Strava, Spotify, and Youtube</li>
 						<li>
 							<a href='https://github.com/hiidamian1/Website'>Github</a>
 						</li>
