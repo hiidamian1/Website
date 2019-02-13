@@ -8,7 +8,7 @@
 	  				ToDos App
 					<ul class='nested'>
 						<li>Simple todos app</li>
-						<li>Vue.js, Node.js, Express.js, MongoDB/Couchbase, deployed on Heroku</li>
+						<li>Vue.js, Node.js, Express.js, MongoDB/Couchbase, Passport.js for authentication, deployed on Heroku</li>
 						<li>
 							<a href='http://damians-todos.herokuapp.com'>Deployed</a>, 
 							<a href='https://github.com/hiidamian1/ToDo-App-FullStack'>Github</a>
