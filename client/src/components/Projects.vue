@@ -10,8 +10,8 @@
 						<li>Simple todos app</li>
 						<li>Vue.js, Node.js, Express.js, MongoDB/Couchbase, Passport.js for authentication, deployed on Heroku</li>
 						<li>
-							<a href='http://damians-todos.herokuapp.com'>Deployed</a>, 
-							<a href='https://github.com/hiidamian1/ToDo-App-FullStack'>Github</a>
+							<a href='http://damians-todos.herokuapp.com' target='_blank'>Deployed</a>, 
+							<a href='https://github.com/hiidamian1/ToDo-App-FullStack' target='_blank'>Github</a>
 						</li>
 
 					</ul>
@@ -21,7 +21,7 @@
 						<li>Stacked Bar Chart for visualizing data from Foodmart dataset</li>
 						<li>D3.js, Node.js, Express.js, MySQL</li>
 						<li>
-							<a href='https://github.com/hiidamian1/Bar-Chart-Webpage'>Github</a>
+							<a href='https://github.com/hiidamian1/Bar-Chart-Webpage' target='_blank'>Github</a>
 						</li>
 					</ul>
 	  			</li>
@@ -31,7 +31,7 @@
 						<li>Vue.js, deployed on Netlify</li>
 						<li>Would like to integrate features involving my favorite apps, like Strava, Spotify, and Youtube</li>
 						<li>
-							<a href='https://github.com/hiidamian1/Website'>Github</a>
+							<a href='https://github.com/hiidamian1/Website' target='_blank'>Github</a>
 						</li>
 					</ul>
 				</li>
