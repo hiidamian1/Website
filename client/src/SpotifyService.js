@@ -4,7 +4,8 @@ const url = "/connectSpotify/";
 
 class SpotifyService {
   static authorize() {
-    return axios.get(url);
+    //return axios.get(url);
+    window.location.href = url;
   }
   
   //Get recently played

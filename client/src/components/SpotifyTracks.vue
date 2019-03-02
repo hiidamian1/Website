@@ -27,7 +27,7 @@ export default {
   async created() {
     try {
       await SpotifyService.authorize();
-      
+      console.log("created");
       //this.tracks = await SpotifyService.getRecent();
     } catch (err) {
       this.err = err.message;
