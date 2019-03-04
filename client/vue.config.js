@@ -5,8 +5,7 @@ module.exports = {
 	devServer: {
 		proxy: {
 			"/connectSpotify": {
-				target: "http://localhost:5000",
-				changeOrigin: true
+				target: "http://localhost:5000"
 			}
 		}
 	}

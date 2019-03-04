@@ -26,9 +26,11 @@ export default {
   },
   async created() {
     try {
-      await SpotifyService.authorize();
-      console.log("created");
-      //this.tracks = await SpotifyService.getRecent();
+      const results = await SpotifyService.getRecent();
+      for (let i = 0 ; i < results.length; i++) {
+        console.log(results[i].track.name);
+      }
+      //this.tracks = results.toArray();
     } catch (err) {
       this.err = err.message;
     }

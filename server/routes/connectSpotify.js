@@ -1,12 +1,84 @@
 const express = require("express");
-const request = require("request"); // "Request" library
-const querystring = require("querystring");
+//const request = require("request"); // "Request" library
+//const querystring = require("querystring");
+const fetch = require('node-fetch');
+
 //const cors = require("cors");
 
 const router = express.Router();
 //router.use(cors());
 
-const redirect_uri = "/redirect";
+const spotifyAPIBaseUri = "https://api.spotify.com";
+const spotifyAccountsBaseUri = "https://accounts.spotify.com";
+
+const clientId = "a6b475f7b8d24041916ff7c928860b0e";
+const clientSecret = "a40641c30caf4eb08291ec2ac909153d";
+
+const refreshToken = "AQDueMX1f0otmm93YhZWWKEea3B0Os-asVtrkypkB4WuPEDDjgTpF-5qyGONWo0YgSKUSreSpCnQIpWcLCxVUMHc4b6OjE3VRcfuN_4YfK4NTa50_ZDHSaawUEGAmwb0PO3Dkw";
+let accessToken = "";
+
+const refreshAccessToken = () => {
+  return fetch(`${spotifyAccountsBaseUri}/api/token`, {
+    method: "POST",
+    body: `grant_type=refresh_token&refresh_token=${refreshToken}`,
+    headers: {
+      "Authorization": `Basic ${new Buffer(`${clientId}:${clientSecret}`).toString('base64')}`,
+      "Content-type": "application/x-www-form-urlencoded"
+    }
+  })
+}
+
+const getRecentlyPlayed = () => {
+  return fetch(`${spotifyAPIBaseUri}/v1/me/player/recently-played?limit=5`, {
+    headers: {
+      "Authorization": `Bearer ${accessToken}`
+    }
+  })
+}
+
+router.get("/getRecent", (req, res) => {
+  /*try {
+    console.log("start");
+    const refresh = await refreshAccessToken();
+    console.log("refresh");
+    const refreshJSON = await refresh.json();
+    console.log("refresh json");
+    accessToken = refreshJSON.access_token;
+    console.log(accessToken);
+
+    const recentlyPlayed = await getRecentlyPlayed();
+    const recentlyPlayedJSON = await recentlyPlayed.json();
+    res.send(recentlyPlayedJSON);
+  } catch (err) {
+    console.log(err);
+  }*/
+
+  refreshAccessToken()
+    .then((refreshResponse) => refreshResponse.json())
+    .then((refreshResponseJSON) => {
+      accessToken = refreshResponseJSON['access_token'];
+      getRecentlyPlayed()
+        .then((recentlyPlayedResponse) => recentlyPlayedResponse.json())
+        .then((recentlyPlayedResponseJSON) => {
+          res.send(recentlyPlayedResponseJSON.items)
+        })
+        .catch((err) => {
+          console.log(err);
+          res.status(500).send('Failed to get recently played tracks');
+        })
+    })
+    .catch((err) => {
+      console.log(err);
+      res.status(500).send('Failed to refresh Spotify token')
+    });
+});
+
+
+
+
+
+/*
+const redirect_uri = "http://localhost:8080/connectSpotify/redirect";
 
 const clientId = "a6b475f7b8d24041916ff7c928860b0e";
 const clientSecret = "a40641c30caf4eb08291ec2ac909153d";
@@ -26,31 +98,24 @@ const generateRandomString = (length) => {
 const stateKey = "spotify_auth_state";
 
 router.get("/", (req, res) => {
-  if (!process.env.SPOTIFY_REFRESH_TOKEN) {
-    console.log("need to authorize");
-    const state = generateRandomString(16);
-    res.cookie(stateKey, state);
+  console.log("need to authorize");
+  const state = generateRandomString(16);
+  res.cookie(stateKey, state);
 
-    // your application requests authorization
-    res.redirect("https://accounts.spotify.com/authorize?" +
-    querystring.stringify({
-      response_type: 'code',
-      client_id: clientId,
-      scope: scope,
-      redirect_uri: redirect_uri,
-      state: state
-    }));
-
-    //res.redirect("https://google.com");
-  } else {
-    console.log("authorized");
-    res.sendStatus(200);
-  }
-
+  // your application requests authorization
+  res.redirect("https://accounts.spotify.com/authorize?" +
+  querystring.stringify({
+    response_type: 'code',
+    client_id: clientId,
+    scope: scope,
+    redirect_uri: redirect_uri,
+    state: state
+  }));
 });
 
 // Get refresh and access token
 router.get("/redirect", (req, res) => {
+  //res.sendStatus(200);
   console.log("redirect");
   const code = req.query.code || null;
   const state = req.query.state || null;
@@ -76,21 +141,26 @@ router.get("/redirect", (req, res) => {
       json: true
     };
 
-    request.post(authOptions, function(error, response, body) {
+    request.post(authOptions, (error, response, body) => {
       if (!error && response.statusCode === 200) {
 
         const access_token = body.access_token,
             refresh_token = body.refresh_token;
 
+        console.log(`refresh token: ${refresh_token}`);
+
         const options = {
-          url: 'https://api.spotify.com/v1/me/player/recently-played',
+          url: 'https://api.spotify.com/v1/me/player/recently-played?limit=5',
           headers: { 'Authorization': 'Bearer ' + access_token },
           json: true
         };
 
         // use the access token to access the Spotify Web API
-        request.get(options, function(error, response, body) {
-          console.log(body);
+        request.get(options, (error, response, body) => {
+          //console.log(body.items);
+          res.send(body.items);
+        
+          
         });
 
         // we can also pass the token to the browser to make requests from there
@@ -98,7 +168,7 @@ router.get("/redirect", (req, res) => {
           querystring.stringify({
             access_token: access_token,
             refresh_token: refresh_token
-          }));*/
+          }));
       } else {
         res.redirect('/#' +
           querystring.stringify({
@@ -108,5 +178,5 @@ router.get("/redirect", (req, res) => {
     });
   }
 });
-
+*/
 module.exports = router;
