@@ -29,7 +29,7 @@ const refreshAccessToken = () => {
 }
 
 const getRecentlyPlayed = () => {
-  return fetch(`${spotifyAPIBaseUri}/v1/me/player/recently-played?limit=5`, {
+  return fetch(`${spotifyAPIBaseUri}/v1/me/player/recently-played?`, {
     headers: {
       "Authorization": `Bearer ${accessToken}`
     }
