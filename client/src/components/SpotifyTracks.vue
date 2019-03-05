@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="tracks">
     <div v-bind:key="tracks.indexOf(trackObj)" v-for="trackObj in tracks">
-      <SpotifyTrack v-bind:track="trackObj.track.name"/>
+      <SpotifyTrack v-bind:track="trackObj.track"/>
     </div>
   </div>
 </template>
@@ -21,5 +21,7 @@ export default {
 </script>
 
 <style scoped>
-
+  .tracks {
+    display: flex;
+  }
 </style>
