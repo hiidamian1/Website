@@ -11,10 +11,10 @@ const router = express.Router();
 const spotifyAPIBaseUri = "https://api.spotify.com";
 const spotifyAccountsBaseUri = "https://accounts.spotify.com";
 
-const clientId = "YOUR CLIENT ID";
-const clientSecret = "YOUR CLIENT SECRET";
+const clientId = "***REMOVED***";
+const clientSecret = "***REMOVED***";
 
-const refreshToken = "YOUR REFRESH TOKEN";
+const refreshToken = "***REMOVED***";
 let accessToken = "";
 
 const refreshAccessToken = () => {
@@ -80,8 +80,8 @@ router.get("/getRecent", (req, res) => {
 /*
 const redirect_uri = "http://localhost:8080/connectSpotify/redirect";
 
-const clientId = "YOUR CLIENT ID";
-const clientSecret = "YOUR CLIENT SECRET";
+const clientId = "***REMOVED***";
+const clientSecret = "***REMOVED***";
 
 const scope = "user-read-recently-played";
 

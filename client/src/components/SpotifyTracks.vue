@@ -23,5 +23,6 @@ export default {
 <style scoped>
   .tracks {
     display: flex;
+    flex-wrap: wrap;
   }
 </style>
