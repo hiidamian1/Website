@@ -1,14 +1,31 @@
 <template>
 	<header class='header'>
-		<a href='#app'>Home</a>|
-     	<a href='#about'>About</a>|
-     	<a href='#projects'>Projects</a>
+		<span v-show="!isMainPage">
+			<router-link to="/">
+				<a>Home</a>
+			</router-link>|
+		</span>
+		<span v-show="isMainPage">
+			<a href='#app'>Home</a>|
+		</span>
+		<span v-show="isMainPage">
+			<a href='#about'>About</a>|
+		</span>
+		<span v-show="isMainPage">
+			<a href='#projects'>Projects</a>|
+		</span>
+		<router-link to="/personal">
+			<a>Personal</a>
+		</router-link>
 	</header>
 </template>
 
 <script>
 	export default {
-		name: 'Header'
+		name: 'Header',
+		props: [
+			"isMainPage"
+		]
 	}
 </script>
 
@@ -27,6 +44,10 @@
 	.header a {
 		color: #fff;
 		padding-right: 5px;
+	}
+
+	router-link {
+		padding-right: 0px;
 	}
 
 </style>
