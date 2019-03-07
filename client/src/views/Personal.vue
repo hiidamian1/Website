@@ -1,22 +1,27 @@
 <template>
-  <div class="root">
-    <Spotify/>
+  <div>
+    <Header v-bind:isMainPage="false"/>
+    <div class="content">
+      <Spotify/>
+    </div>
   </div>
 </template>
 
 <script>
-import Spotify from "../components/Spotify"
+import Spotify from "../components/Spotify";
+import Header from "../components/Header";
 
 export default {
   name: "Personal",
   components: {
-    Spotify
+    Spotify,
+    Header
   }
 }
 </script>
 
 <style scoped>
-  .root {
+  .content {
     padding: 20px;
   }
 </style>

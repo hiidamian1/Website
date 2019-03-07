@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Header v-bind:isMainPage="true"/>
     <HomeIntro/>
     <About/>
     <Projects/>
@@ -14,6 +15,7 @@ import HomeIntro from '../components/HomeIntro.vue';
 import About from '../components/About.vue';
 import Projects from '../components/Projects.vue';
 import Contact from '../components/Contact.vue';
+import Header from "../components/Header";
 
 export default {
   name: 'home',
@@ -21,7 +23,8 @@ export default {
     HomeIntro,
     About,
     Projects,
-    Contact
+    Contact,
+    Header
   }
 }
 </script>

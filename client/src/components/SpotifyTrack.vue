@@ -1,13 +1,13 @@
 <template>
   <div class="root">
-    <div class="image" v-on:click="playState" v-on:mouseover="display=true" v-on:mouseleave="display=false" v-bind:style="{backgroundImage: 'url(' + track.album.images[0].url + ')'}">
-      <i class="far fa-play-circle play-icon" v-show="display"></i>
+    <div class="image" v-on:click="playState" v-on:mouseover="displayPlay=true" v-on:mouseleave="displayPlay=false" v-bind:style="{backgroundImage: 'url(' + track.album.images[0].url + ')'}">
+      <i class="far fa-play-circle play-icon" v-show="displayPlay"></i>
     </div>
-    <div class="description">
+    <div class="description" v-on:mouseover="displayTitleTooltip=true" v-on:mouseleave="displayTitleTooltip=false">
       <div class="title">
         {{track.name}}
       </div>
-      <div class="artist">
+      <div class="artist" v-on:mouseover="displayArtistTooltip=true" v-on:mouseleave="displayArtistTooltip=false">
         {{track.artists[0].name}}
       </div>
     </div>
@@ -24,7 +24,9 @@ export default {
     return {
       song: new Audio(this.track.preview_url),
       playing: false,
-      display: false
+      displayPlay: false,
+      displayTitleTooltip: false,
+      displayArtistsTooltip: false
     }
   },
   methods: {
@@ -51,11 +53,12 @@ export default {
     color: white;
     margin: 5px;
     padding: 5px;
+    width: 18.75rem;
   }
 
   .image {
-    height: 5em;
-    width: 5em;
+    min-height: 5rem;
+    min-width: 5rem;
     background-size: contain;
     cursor: pointer;
     text-align: center;
@@ -66,19 +69,45 @@ export default {
   }
 
   .play-icon {
-    margin: 2em 0em;
+    margin: 2rem 0em;
   }
 
   .description {
-    margin: auto 5px;
+    margin: auto 0px auto 5px;
+    white-space: nowrap;
+    overflow: hidden;
   }
 
   .title {
-    font-size: 1.5em;
+    font-size: 1.5rem;
     margin-bottom: 5px;
+    text-overflow: ellipsis;
   }
 
   .album, .artist {
-    font-size: 1em;
+    font-size: 1rem;
+  }
+
+  /* Tooltip container */
+  .tooltip {
+    position: relative;
+  }
+
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+  
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
   }
 </style>
