@@ -1,5 +1,5 @@
 <template>
-  <div class="root">
+  <div class="track-content">
     <div class="image" v-on:click="playState" v-on:mouseover="displayPlay=true" v-on:mouseleave="displayPlay=false" v-bind:style="{backgroundImage: 'url(' + track.album.images[0].url + ')'}">
       <i class="far fa-play-circle play-icon" v-show="displayPlay"></i>
     </div>
@@ -47,13 +47,12 @@ export default {
 </script>
 
 <style scoped>
-  .root {
+  .track-content {
     display: flex;
     background-color: #333;
     color: white;
     margin: 5px;
     padding: 5px;
-    width: 18.75rem;
   }
 
   .image {

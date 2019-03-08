@@ -1,5 +1,5 @@
 <template>
-  <div class="content">
+  <div class="spotify-content">
     <h1>
       What I've Been Listening To
     </h1>
@@ -37,12 +37,19 @@ export default {
 </script>
 
 <style scoped>
-  .content {
+  .spotify-content {
     color: #333;
   }
 
   h1 {
 		font-weight: normal;
-		font-size: 50px;
+		font-size: 30px;
+    text-align: center;
 	}
+
+  @media(min-width: 992px) {
+    h1 {  
+      font-size: 50px;
+    }
+  }
 </style>

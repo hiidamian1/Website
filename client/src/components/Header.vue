@@ -1,7 +1,7 @@
 <template>
 	<header class='header'>
 		<span v-show="!isMainPage">
-			<router-link to="/">
+			<router-link tag="a" to="/">
 				<a>Home</a>
 			</router-link>|
 		</span>
@@ -14,7 +14,7 @@
 		<span v-show="isMainPage">
 			<a href='#projects'>Projects</a>|
 		</span>
-		<router-link to="/personal">
+		<router-link tag="a" to="/personal">
 			<a>Personal</a>
 		</router-link>
 	</header>
@@ -43,11 +43,7 @@
 
 	.header a {
 		color: #fff;
-		padding-right: 5px;
-	}
-
-	router-link {
-		padding-right: 0px;
+		padding-right: 2.5px;
 	}
 
 </style>
