@@ -4,37 +4,38 @@
   		<h1>Projects</h1> 
   		<div class='projects-list'>
 	  		<ul>
-	  			<li>
+	  			<li class="project-item">
 	  				ToDos App
-					<ul class='nested'>
-						<li>Simple todos app</li>
-						<li>Vue.js, Node.js, Express.js, MongoDB/Couchbase, Passport.js for authentication, deployed on Heroku</li>
-						<li>
-							<a href='http://damians-todos.herokuapp.com' target='_blank'>Deployed</a>, 
-							<a href='https://github.com/hiidamian1/ToDo-App-FullStack' target='_blank'>Github</a>
-						</li>
-
-					</ul>
+						<ul class='nested'>
+							<li>Simple todos app</li>
+							<li>Vue.js, Node.js, Express.js, MongoDB/Couchbase, Passport.js for authentication, deployed on Heroku</li>
+							<li>
+								<a href='http://damians-todos.herokuapp.com' target='_blank'>Deployed</a>, 
+								<a href='https://github.com/hiidamian1/ToDo-App-FullStack' target='_blank'>Github</a>
+							</li>
+						</ul>
 	  			</li>
-	  			<li>Bar Chart Webpage
-					<ul class='nested'>
-						<li>Stacked Bar Chart for visualizing data from Foodmart dataset</li>
-						<li>D3.js, Node.js, Express.js, MySQL</li>
-						<li>
-							<a href='https://github.com/hiidamian1/Bar-Chart-Webpage' target='_blank'>Github</a>
-						</li>
-					</ul>
+	  			<li class="project-item">
+						Bar Chart Webpage
+						<ul class='nested'>
+							<li>Stacked Bar Chart for visualizing data from Foodmart dataset</li>
+							<li>D3.js, Node.js, Express.js, MySQL</li>
+							<li>
+								<a href='https://github.com/hiidamian1/Bar-Chart-Webpage' target='_blank'>Github</a>
+							</li>
+						</ul>
 	  			</li>
-	  			<li>Portfolio Website
+	  			<li class="project-item">
+						Portfolio Website
 	  				<ul class='nested'>
-						<li>Showcasing my interests and who I am</li>
-						<li>Vue.js, deployed on Netlify</li>
-						<li>Would like to integrate features involving my favorite apps, like Strava, Spotify, and Youtube</li>
-						<li>
-							<a href='https://github.com/hiidamian1/Website' target='_blank'>Github</a>
-						</li>
-					</ul>
-				</li>
+							<li>Showcasing my interests and who I am</li>
+							<li>Vue.js, deployed on Netlify</li>
+							<li>Would like to integrate features involving my favorite apps, like Strava, Spotify, and Youtube</li>
+							<li>
+								<a href='https://github.com/hiidamian1/Website' target='_blank'>Github</a>
+							</li>
+						</ul>
+					</li>
 	  		</ul>
   		</div>
   	</div>
@@ -53,24 +54,28 @@
 	}
 
 	.projects-content {
-		padding: 20px;
+		padding: 2rem;
 	}
 
 	.projects-list {
-		padding: 20px;
+		padding: 2rem;
+	}
+
+	.project-item {
+		font-size: 1.6rem;
 	}
 
 	h1 {
 		font-weight: normal;
-		font-size: 50px;
+		font-size: 5rem;
 	}
 
 	li {
-		margin: 5px 0px;
+		margin: .5rem 0rem;
 	}
 
 	ul .nested {
-		margin-left: 15px;
+		margin-left: 1.5rem;
 	}
 
 	a {

@@ -16,19 +16,14 @@
 	.root {
 		background-color: #333;
 		color: #fff;
-		padding: 10px;
+		padding: 1rem;
 		width: 100%;
 		text-align: center;
-	}
-
-	h1 {
-		margin-bottom: 20px;
-		font-weight: normal;
-		font-size: 50px;
+		font-size: 1.6rem;
 	}
 	
 	a {
 		color: #fff;
-		padding-right: 5px;
+		padding-right: .5rem;
 	}
 </style>
