@@ -43,13 +43,13 @@ export default {
 
   h1 {
 		font-weight: normal;
-		font-size: 30px;
+		font-size: 3rem;
     text-align: center;
 	}
 
   @media(min-width: 992px) {
     h1 {  
-      font-size: 50px;
+      font-size: 5rem;
     }
   }
 </style>

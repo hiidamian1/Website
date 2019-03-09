@@ -24,4 +24,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 </style>

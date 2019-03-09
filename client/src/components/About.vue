@@ -26,42 +26,47 @@
 </script>
 
 <style scoped>
-	h1 {
-		font-weight: normal;
-		font-size: 50px;
-		margin-bottom: 40px;
-	}
-
 	.root {
 		background: #333;
 		display: flex;
 		color: white;
+		padding: 2rem;
 	}
 
 	.about-text {
 		display: flex;
 		flex: 2;
-		line-height: 30px;
-		font-size: 20px;
-		padding: 20px;
+		line-height: 2.5rem;
+		font-size: 1.6rem;
 		justify-content: center;	
 		flex-direction: column;
 	}
 
-	.about-image{
-		flex: 1;
-		background-image: url('../assets/IMG_0604.png');
-		background-repeat: no-repeat;
-		background-size: cover;
-		height: 400px;
-		align-self: center;
-		margin: 20px;
+	h1 {
+		font-weight: normal;
+		font-size: 5rem;
+		margin-bottom: 4rem;
 	}
 
-	a{
+
+
+	@media(min-width: 992px) {
+		.about-image{
+			flex: 1;
+			background-image: url('../assets/IMG_0604.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+			height: 25rem;
+			align-self: center;
+			margin-left: 2rem;
+		}
+	}
+
+	a {
 	    display: block;
 	    position: relative;
-	    top: -38px;
+	    top: -5.5rem;
 	    visibility: hidden;
 	}
 </style>

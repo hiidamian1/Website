@@ -51,8 +51,8 @@ export default {
     display: flex;
     background-color: #333;
     color: white;
-    margin: 5px;
-    padding: 5px;
+    margin: .5rem;
+    padding: .5rem;
   }
 
   .image {
@@ -72,14 +72,14 @@ export default {
   }
 
   .description {
-    margin: auto 0px auto 5px;
+    margin: auto 0rem auto .5rem;
     white-space: nowrap;
     overflow: hidden;
   }
 
   .title {
     font-size: 1.5rem;
-    margin-bottom: 5px;
+    margin-bottom: .5rem;
     text-overflow: ellipsis;
   }
 
@@ -98,7 +98,7 @@ export default {
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 5px 0;
+    padding: .5rem 0;
   
     /* Position the tooltip text - see examples below! */
     position: absolute;
