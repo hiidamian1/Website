@@ -4,7 +4,6 @@ const url = "/connectSpotify";
 
 class SpotifyService {
   static authorize() {
-    //return axios.get(url);
     window.location.href = url;
   }
   

@@ -39,9 +39,6 @@ export default {
         this.playing = false;
       }
     }
-  },
-  created() {
-    console.log(this.track.album.images[2].url);
   }
 }
 </script>
@@ -85,28 +82,5 @@ export default {
 
   .album, .artist {
     font-size: 1rem;
-  }
-
-  /* Tooltip container */
-  .tooltip {
-    position: relative;
-  }
-
-  /* Tooltip text */
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    background-color: black;
-    color: #fff;
-    text-align: center;
-    padding: .5rem 0;
-  
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-  }
-
-  /* Show the tooltip text when you mouse over the tooltip container */
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
   }
 </style>
