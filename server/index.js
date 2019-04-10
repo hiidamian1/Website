@@ -12,8 +12,6 @@ app.use(cookieParser());
 const connectSpotify = require("./routes/connectSpotify");
 app.use("/connectSpotify", connectSpotify);
 
-// If process.env.SPOTIFY_REFRESH_TOKEN is undefined, run authorization script. else, just call api to get songs
-
 //handle production
 if (process.env.NODE_ENV == "production") {
 	//static folder
