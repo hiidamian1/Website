@@ -23,7 +23,11 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "node-fetch": "^2.3.0",
+    "pdfjs-dist": "^2.0.943",
     "querystring": "^0.2.0",
     "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.6"
   }
 }

@@ -48,8 +48,6 @@
 		margin-bottom: 4rem;
 	}
 
-
-
 	@media(min-width: 992px) {
 		.about-image{
 			flex: 1;

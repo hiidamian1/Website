@@ -7,8 +7,9 @@
 	  			<li class="project-item">
 	  				ToDos App
 						<ul class='nested'>
-							<li>Simple todos app</li>
-							<li>Vue.js, Node.js, Express.js, MongoDB/Couchbase, Passport.js for authentication, deployed on Heroku</li>
+							<li>Simple todos app to help my sister keep track of schoolwork</li>
+							<li>Vue.js, Node.js, Express.js, MongoDB, Passport.js for authentication, deployed on Heroku</li>
+							<li>Stacked layout and media queries for a mobile-friendly experience</li>
 							<li>
 								<a href='http://damians-todos.herokuapp.com' target='_blank'>Deployed</a>, 
 								<a href='https://github.com/hiidamian1/ToDo-App-FullStack' target='_blank'>Github</a>
@@ -29,8 +30,10 @@
 						Portfolio Website
 	  				<ul class='nested'>
 							<li>Showcasing my interests and who I am</li>
-							<li>Vue.js, deployed on Netlify</li>
-							<li>Would like to integrate features involving my favorite apps, like Strava, Spotify, and Youtube</li>
+							<li>Vue.js, Node.js, Express.js, deployed on Heroku</li>
+							<li>Uses Spotify API to retrieve my most recently listened to songs</li>
+							<li>Uses flexbox and media queries for a response and mobile-friendly design</li>
+							<li>Would like to explore and integrate other APIs, such as Strava</li>
 							<li>
 								<a href='https://github.com/hiidamian1/Website' target='_blank'>Github</a>
 							</li>

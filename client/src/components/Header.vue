@@ -2,20 +2,31 @@
 	<header class='header'>
 		<span v-show="!isMainPage">
 			<router-link to="/">
-				<a>Home</a>
-			</router-link>|
+				<i class="fas fa-home"></i>
+				Home
+			</router-link>
 		</span>
 		<span v-show="isMainPage">
-			<a href='#app'>Home</a>|
+			<a href='#app'>
+				<i class="fas fa-home"></i>
+				Home
+			</a>
 		</span>
 		<span v-show="isMainPage">
-			<a href='#about'>About</a>|
+			<a href='#about'>
+				<i class="fas fa-user"></i>
+				About
+			</a>
 		</span>
 		<span v-show="isMainPage">
-			<a href='#projects'>Projects</a>|
+			<a href='#projects'>
+				<i class="fas fa-toolbox"></i>
+				Projects
+			</a>
 		</span>
 		<router-link to="/personal">
-			<a>Personal</a>
+			<i class="fas fa-music"></i>
+			Personal
 		</router-link>
 	</header>
 </template>
@@ -44,7 +55,12 @@
 
 	.header a {
 		color: #fff;
-		padding-right: .25rem;
+		margin: 0rem 1rem;
+		text-decoration: none;
+	}
+
+	.header a:hover {
+		opacity: 0.5;
 	}
 
 </style>
