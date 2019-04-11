@@ -26,7 +26,7 @@
 		</span>
 		<router-link to="/personal">
 			<i class="fas fa-music"></i>
-			Personal
+			Music
 		</router-link>
 	</header>
 </template>
@@ -55,9 +55,15 @@
 
 	.header a {
 		color: #fff;
-		margin: 0rem 1rem;
+		margin: 0rem;
 		text-decoration: none;
 	}
+	
+	@media(min-width: 600px){	
+    .header a {
+			margin: 0rem 1rem;
+		}
+  }
 
 	.header a:hover {
 		opacity: 0.5;

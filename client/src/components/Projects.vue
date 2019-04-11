@@ -1,5 +1,6 @@
 <template>
-  <div id='projects' class='root'>
+  <div class='root'>
+		<a id='projects'></a>
   	<div class='projects-content'>
   		<h1>Projects</h1> 
   		<div class='projects-list'>
@@ -54,6 +55,13 @@
 <style scoped>
 	.root {
 		color: #333;
+	}
+
+	#projects {
+		display: block;
+		position: relative;
+		top: -3.8rem;
+		visibility: hidden;
 	}
 
 	.projects-content {
