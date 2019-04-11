@@ -61,10 +61,10 @@
 		}
 	}
 
-	a {
-	    display: block;
-	    position: relative;
-	    top: -5.5rem;
-	    visibility: hidden;
+	#about {
+		display: block;
+		position: relative;
+		top: -5.7rem;
+		visibility: hidden;
 	}
 </style>
