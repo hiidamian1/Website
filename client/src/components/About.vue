@@ -1,21 +1,23 @@
 <template>
-	<div class='root'>
+	<div>
 		<a id='about'></a>
-		<div class='about-text'>
-			<h1>Hi there!</h1> 
-			<div>
-				I'm a recent Computer Science graduate from UC Irvine. I would love the opportunity to impact the lives of everyday individuals through my work, in an environment that allows me to contribute to the overall success of the team while also learning new things along the way. 
-				
-				<br><br>
-				
-				In my free time, I ride bikes, play basketball, listen to lots of hip hop or electronic music, and spend (a little too much) time on Youtube and Reddit.
-				
-				<br><br>
-				
-				If you think we could be a good match, don't hesitate to reach out!
+		<div class='about-container'>
+			<div class='about-text'>
+				<h1>Hi there!</h1> 
+				<div>
+					I'm a recent Computer Science graduate from UC Irvine. I would love the opportunity to impact the lives of everyday individuals through my work, in an environment that allows me to contribute to the overall success of the team while also learning new things along the way. 
+					
+					<br><br>
+					
+					In my free time, I ride bikes, play basketball, listen to lots of hip hop or electronic music, and spend (a little too much) time on Youtube and Reddit.
+					
+					<br><br>
+					
+					If you think we could be a good match, don't hesitate to reach out!
+				</div>
 			</div>
+			<div class='about-image'></div>
 		</div>
-		<div class='about-image'></div>
 	</div>
 </template>
 
@@ -26,7 +28,7 @@
 </script>
 
 <style scoped>
-	.root {
+	.about-container {
 		background: #333;
 		display: flex;
 		color: white;
@@ -52,13 +54,13 @@
 		display: block;
 		position: relative;
 		/*top: -20.2rem;*/
-		top: -6.3rem;
+		top: -18.1rem;
 		visibility: hidden;
 	}
 
 	@media(min-width: 768px) {
 		#about {
-			top: -6.3rem;
+			top: -4.3rem;
 		}
 	}
 
