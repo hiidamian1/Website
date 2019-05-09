@@ -4,36 +4,36 @@
 			<!--<div class="navbar-brand">
 				Damian Hii
 			</div>-->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponse">
+      <button class="navbar-toggler" type="button">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponse">
         <ul class="navbar-nav ml-auto mr-auto">
-          <li v-show="!isMainPage" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <li v-show="!isMainPage" class="nav-item">
 						<router-link to="/">
 							<i class="fas fa-home"></i>
 							Home
 						</router-link>
           </li>
-          <li v-show="isMainPage" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <li v-show="isMainPage" class="nav-item">
 						<a href='#app'>
 							<i class="fas fa-home"></i>
 							Home
 						</a>
           </li>
-          <li v-show="isMainPage" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <li v-show="isMainPage" class="nav-item">
 						<a href='#about'>
 							<i class="fas fa-user"></i>
 							About
 						</a>
           </li>
-          <li v-show="isMainPage" class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show">
+          <li v-show="isMainPage" class="nav-item">
 						<a href='#projects'>
 							<i class="fas fa-toolbox"></i>
 							Projects
 						</a>
           </li>
-          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+          <li class="nav-item">
             <router-link to="/personal">
 							<i class="fas fa-music"></i>
 							Music
