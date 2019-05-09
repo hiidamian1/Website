@@ -60,8 +60,14 @@
 	#projects {
 		display: block;
 		position: relative;
-		top: -4.3rem;
+		top: -18.2rem;
 		visibility: hidden;
+	}
+
+	@media(min-width: 768px) {
+		#projects {
+			top: -4.3rem;
+		}
 	}
 
 	.projects-content {

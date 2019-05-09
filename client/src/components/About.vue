@@ -48,6 +48,19 @@
 		margin-bottom: 4rem;
 	}
 
+	#about {
+		display: block;
+		position: relative;
+		top: -20.2rem;
+		visibility: hidden;
+	}
+
+	@media(min-width: 768px) {
+		#about {
+			top: -6.3rem;
+		}
+	}
+
 	@media(min-width: 992px) {
 		.about-image{
 			flex: 1;
@@ -59,12 +72,5 @@
 			align-self: center;
 			margin-left: 2rem;
 		}
-	}
-
-	#about {
-		display: block;
-		position: relative;
-		top: -6.3rem;
-		visibility: hidden;
 	}
 </style>

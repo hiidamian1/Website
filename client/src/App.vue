@@ -20,12 +20,6 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
-
-@media (min-width: 768px) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
-
 </style>
