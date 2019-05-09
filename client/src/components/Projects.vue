@@ -60,7 +60,8 @@
 	#projects {
 		display: block;
 		position: relative;
-		top: -18.2rem;
+		/*top: -18.2rem;*/
+		top: -4.3rem;
 		visibility: hidden;
 	}
 
