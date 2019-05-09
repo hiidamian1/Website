@@ -51,7 +51,8 @@
 	#about {
 		display: block;
 		position: relative;
-		top: -20.2rem;
+		/*top: -20.2rem;*/
+		top: -6.3rem;
 		visibility: hidden;
 	}
 
