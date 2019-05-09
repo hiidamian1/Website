@@ -1,49 +1,51 @@
 <template>
-  <div class='root'>
+	<div>
 		<a id='projects'></a>
-  	<div class='projects-content'>
-  		<h1>Projects</h1> 
-  		<div class='projects-list'>
-	  		<ul>
-	  			<li class="project-item">
-	  				ToDos App
-						<ul class='nested'>
-							<li>Simple todos app to help my sister keep track of schoolwork</li>
-							<li>Vue.js, Node.js, Express.js, MongoDB, Passport.js for authentication, deployed on Heroku</li>
-							<li>Stacked layout and media queries for a mobile-friendly experience</li>
-							<li>
-								<a href='http://damians-todos.herokuapp.com' target='_blank'>Deployed</a>, 
-								<a href='https://github.com/hiidamian1/ToDo-App-FullStack' target='_blank'>Github</a>
-							</li>
-						</ul>
-	  			</li>
-	  			<li class="project-item">
-						Bar Chart Webpage
-						<ul class='nested'>
-							<li>Stacked Bar Chart for visualizing data from Foodmart dataset</li>
-							<li>D3.js, Node.js, Express.js, MySQL</li>
-							<li>
-								<a href='https://github.com/hiidamian1/Bar-Chart-Webpage' target='_blank'>Github</a>
-							</li>
-						</ul>
-	  			</li>
-	  			<li class="project-item">
-						Portfolio Website
-	  				<ul class='nested'>
-							<li>Showcasing my interests and who I am</li>
-							<li>Vue.js, Node.js, Express.js, Bootstrap, deployed on Heroku</li>
-							<li>Uses Spotify API to retrieve my most recently listened to songs</li>
-							<li>Uses flexbox and media queries for a responsive and mobile-friendly design</li>
-							<li>Would like to explore and integrate other APIs, such as Strava</li>
-							<li>
-								<a href='https://github.com/hiidamian1/Website' target='_blank'>Github</a>
-							</li>
-						</ul>
-					</li>
-	  		</ul>
-  		</div>
-  	</div>
-  </div>
+		<div class='projects-container'>
+			<div class='projects-content'>
+				<h1>Projects</h1> 
+				<div class='projects-list'>
+					<ul>
+						<li class="project-item">
+							ToDos App
+							<ul class='nested'>
+								<li>Simple todos app to help my sister keep track of schoolwork</li>
+								<li>Vue.js, Node.js, Express.js, MongoDB, Passport.js for authentication, deployed on Heroku</li>
+								<li>Stacked layout and media queries for a mobile-friendly experience</li>
+								<li>
+									<a href='http://damians-todos.herokuapp.com' target='_blank'>Deployed</a>, 
+									<a href='https://github.com/hiidamian1/ToDo-App-FullStack' target='_blank'>Github</a>
+								</li>
+							</ul>
+						</li>
+						<li class="project-item">
+							Bar Chart Webpage
+							<ul class='nested'>
+								<li>Stacked Bar Chart for visualizing data from Foodmart dataset</li>
+								<li>D3.js, Node.js, Express.js, MySQL</li>
+								<li>
+									<a href='https://github.com/hiidamian1/Bar-Chart-Webpage' target='_blank'>Github</a>
+								</li>
+							</ul>
+						</li>
+						<li class="project-item">
+							Portfolio Website
+							<ul class='nested'>
+								<li>Showcasing my interests and who I am</li>
+								<li>Vue.js, Node.js, Express.js, Bootstrap, deployed on Heroku</li>
+								<li>Uses Spotify API to retrieve my most recently listened to songs</li>
+								<li>Uses flexbox and media queries for a responsive and mobile-friendly design</li>
+								<li>Would like to explore and integrate other APIs, such as Strava</li>
+								<li>
+									<a href='https://github.com/hiidamian1/Website' target='_blank'>Github</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -53,7 +55,7 @@
 </script>
 
 <style scoped>
-	.root {
+	.projects-container {
 		color: #333;
 	}
 
@@ -61,7 +63,7 @@
 		display: block;
 		position: relative;
 		/*top: -18.2rem;*/
-		top: -4.3rem;
+		top: -18.1rem;
 		visibility: hidden;
 	}
 
