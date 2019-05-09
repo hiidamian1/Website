@@ -22,4 +22,10 @@ html {
   font-size: 62.5%;
 }
 
+@media (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 </style>

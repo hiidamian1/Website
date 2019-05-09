@@ -9,31 +9,31 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponse">
         <ul class="navbar-nav ml-auto mr-auto">
-          <li v-show="!isMainPage" class="nav-item">
+          <li v-show="!isMainPage" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 						<router-link to="/">
 							<i class="fas fa-home"></i>
 							Home
 						</router-link>
           </li>
-          <li v-show="isMainPage" class="nav-item">
+          <li v-show="isMainPage" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 						<a href='#app'>
 							<i class="fas fa-home"></i>
 							Home
 						</a>
           </li>
-          <li v-show="isMainPage" class="nav-item">
+          <li v-show="isMainPage" class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 						<a href='#about'>
 							<i class="fas fa-user"></i>
 							About
 						</a>
           </li>
-          <li v-show="isMainPage" class="nav-item">
+          <li v-show="isMainPage" class="nav-item"  data-toggle="collapse" data-target=".navbar-collapse.show">
 						<a href='#projects'>
 							<i class="fas fa-toolbox"></i>
 							Projects
 						</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
             <router-link to="/personal">
 							<i class="fas fa-music"></i>
 							Music
