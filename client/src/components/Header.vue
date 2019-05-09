@@ -4,7 +4,7 @@
 			<!--<div class="navbar-brand">
 				Damian Hii
 			</div>-->
-      <button class="navbar-toggler" type="button">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponse">
