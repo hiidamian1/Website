@@ -31,9 +31,9 @@
 						Portfolio Website
 	  				<ul class='nested'>
 							<li>Showcasing my interests and who I am</li>
-							<li>Vue.js, Node.js, Express.js, deployed on Heroku</li>
+							<li>Vue.js, Node.js, Express.js, Bootstrap, deployed on Heroku</li>
 							<li>Uses Spotify API to retrieve my most recently listened to songs</li>
-							<li>Uses flexbox and media queries for a response and mobile-friendly design</li>
+							<li>Uses flexbox and media queries for a responsive and mobile-friendly design</li>
 							<li>Would like to explore and integrate other APIs, such as Strava</li>
 							<li>
 								<a href='https://github.com/hiidamian1/Website' target='_blank'>Github</a>

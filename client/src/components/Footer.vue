@@ -2,7 +2,7 @@
 	<div id='footer' class='root'>
 		<a href='https://www.linkedin.com/in/damian-hii' target='_blank'><i class="fab fa-linkedin"></i></a>
 		<a href='https://github.com/hiidamian1/' target='_blank'><i class="fab fa-github-square"></i></a>
-		<a href='./Resume_4_10_19.pdf' target='_blank'><i class="far fa-address-card"></i></a>
+		<a href='./Resume 5_2_19.pdf' target='_blank'><i class="far fa-address-card"></i></a>
 	</div>
 </template>
 
