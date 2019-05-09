@@ -64,7 +64,7 @@
 	#about {
 		display: block;
 		position: relative;
-		top: -5.7rem;
+		top: -6.3rem;
 		visibility: hidden;
 	}
 </style>
