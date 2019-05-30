@@ -11,7 +11,6 @@ const clientId = "CLIENTID";
 const clientSecret = "CLIENTSECRET";
 
 const refreshToken = "REFRESHTOKEN";
-
 let accessToken = "";
 
 const refreshAccessToken = () => {
