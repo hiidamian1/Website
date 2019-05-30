@@ -7,10 +7,10 @@ const router = express.Router();
 const spotifyAPIBaseUri = "https://api.spotify.com";
 const spotifyAccountsBaseUri = "https://accounts.spotify.com";
 
-const clientId = "***REMOVED***";
-const clientSecret = "***REMOVED***";
+const clientId = "YOUR_CLIENT_ID";
+const clientSecret = "YOUR_CLIENT_SECRET";
 
-const refreshToken = "***REMOVED***";
+const refreshToken = "YOUR_REFRESH_TOKEN";
 let accessToken = "";
 
 const refreshAccessToken = () => {
