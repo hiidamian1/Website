@@ -22,7 +22,7 @@
     "cookie-parser": "^1.4.4",
     "cors": "^2.8.5",
     "express": "^4.16.4",
-    "node-fetch": "^2.3.0",
+    "node-fetch": "^2.6.7",
     "pdfjs-dist": "^2.0.943",
     "querystring": "^0.2.0",
     "request": "^2.88.0"
